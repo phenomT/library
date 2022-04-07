@@ -13,6 +13,6 @@
 |
 */
 
-    Route::post('/books','App\Http\Controllers\BooksController@store');
-    Route::patch('/books/{book}','App\Http\Controllers\BooksController@update');
+
+
 ?>
