@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+Route::post('/books','App\Http\Controllers\BooksController@store');
+Route::patch('/books/{book}','App\Http\Controllers\BooksController@update');
+Route::delete('/books/{book}','App\Http\Controllers\BooksController@destroy');
+
+
+
+Route::post('/authors','App\Http\Controllers\AuthorsController@store');
